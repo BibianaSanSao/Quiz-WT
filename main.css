@@ -1,9 +1,8 @@
 /* Fonts from Google*/
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Roboto+Mono&display=swap");
 *{
-  font-family: "roboto mono"; sans-serif;
+  font-family: "roboto mono";
 }
-
 
 /* background image*/
 body{
@@ -28,7 +27,6 @@ article{
   text-align: center;
 }
 
-
 .startBtn{
   border: none;
   color: #800059;
@@ -44,11 +42,8 @@ article{
   
 }
 
-
-
-
-
- .quiz .header{
+/*quiz question 1 page*/
+ .quiz .header .header_quiz{
    height: 60px;
    width: 100%;
    display: flex;
@@ -56,6 +51,54 @@ article{
    font-size: 20px;
  }
  
+ .quiz .header .time .time_text{
+   text-align: center;
+   font-size: 15px;
+
+ }
+
+ .quiz .time .time_sec{
+   text-align: center;
+ }
+
+ .quiz .question{
+   text-align: center;
+
+ }
+
+ .quiz .option_list{
+   text-align: center;
+ }
+
+ .quiz .option{
+   text-align: center;
+ }
+
+.quiz .aside .left{
+  width: 100px;
+  height: 200px;
+  
+}
+ 
+ .quiz .footer .total_questions{
+   text-align: center;
+ }
+
+.quiz .span{
+  text-align: center;
+
+ }
+
+ .quiz .button .nextBtn{
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 0 35px;
+ }
+
+
+
  @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
  }
