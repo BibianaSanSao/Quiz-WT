@@ -7,71 +7,116 @@ body{
     flex-flow: row wrap;
     font-weight: bold;
     text-align: center;
+    width: 300px;
 }
 
 .wrapper > * {
-        padding: px;
-        flex: 1 100%;
+    padding: 10px;
+    flex: 1 100%;
 }
 
-.header {
-    background: #EBDBCC;
-}
-
-.footer {
-    background: #EBDBCC;
-}
-
-.main {
-    text-align: center;
-    background-color: #fffaef;
+.wrapper .header{
+    position: relative;
+    z-index: 99;
     height: 500px;
-    
+    padding: 0 30px;
+    background: #EBDBCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+
 }
 
-article .question{
+.wrapper .header .title{
+    font-size: 20px;
+    font-weight: 600;
 
 }
 
-.wrapper .article .option_list{
+.wrapper header .timer .time_text{
+    font-weight: 400;
+    font-size: 17;
+    user-select: none;
+
+}
+
+.wrapper header .timer .time_sec{
+    background: #EBDBCC;
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: red;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    user-select: none;
+
+}
+
+.wrapper section{
+    text-align: center;
+    background: #FFFAEF;
+    padding: 25px 30px 20px 30px;
+
+}
+
+.wrapper section .question{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.wrapper section .option_list{
     padding: 20px 0;
-    display: block;
-    
+    display: block;    
 }
 
-article .option_list .option{
+section .option_list .option{
     background: #EBDBCC;
     border: 1px solid green;
     border-radius: 5px;
     padding: 8px 15px;
-    font-size: 17;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+}
+
+section .option_list .option:hover{
+    color: aqua;
+    background: yellow;
+    border-color: blue;
 
 }
 
-.option_list .
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
 
-.aside-1 {
+
+.wrapper .aside-1 .left{
     background: #EBDBCC;
-}
-
-.aside-1 .left{
-    width: 350px;
+    
     height: 500px;
     image-resolution: 300dpi;
 }
 
-.aside-2 {
-    background: #EBDBCC;
-}
 
-.aside-2 .right{
-    width: 350px;
+
+.wrapper .aside-2 .right{
+    background: #EBDBCC;
+
     height: 500px;
     image-resolution: 300dpi;
+}
+
+
+.footer {
+    background: #EBDBCC;
 }
 
 

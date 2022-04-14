@@ -1,0 +1,157 @@
+body{
+    background-color: #EBDBCC;
+}
+
+/*make the page responsive*/
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap; 
+   }
+
+    /*image on the left*/
+   .flex-item .left{
+        background: #EBDBCC;
+        padding-left: 20px;
+        width: 350px;
+        height: 550px;
+        margin-top: 10px;
+        line-height: 150px;
+        text-align: center;
+   }
+
+
+    /*main quiz*/
+   .flex-item .quiz{
+        width: 500px;
+        height: 550px;
+        background: #EBDBCC;
+        padding-left: 20px;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+   }
+
+    /*header*/   
+   .flex-item .header{
+        position: relative;
+        z-index: 99;
+        padding: 0 30px;
+        background: #EBDBCC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px 5px 0 0;
+    }
+
+    /*style the title*/
+    .flex-item .title{
+        align-items: center; 
+        text-align: center;
+        font-size: 60px;
+        color: #7b5b64;    
+    }
+    
+    .flex-item .timer{
+        position: relative;
+        width: 145px;
+        height: 45px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background: #7b5b64;
+        border: #231709;
+        border-radius: 5px;
+        padding: 0 8px;   
+    }
+
+    .flex-item .timer .time_text{
+        text-align: center;
+        font-size: 17;
+        font-weight: 500;
+        color: white;
+        user-select: none;   
+    }
+
+    .flex-item .timer .time_sec{
+        height: 30px;
+        width: 45px;
+        text-align: center;
+        line-height: 30px;
+        background: white;
+        font-size: 18px;
+        font-weight: 500;
+        color: #7b5b64;
+        border: 1px solid #231709;
+        border-radius: 5px;
+        user-select: none;
+    }
+    
+    /*style the question text*/
+   .flex-item .question{
+        font-size: 30px;
+        color: #231709;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*style the answers box*/
+   .flex-item .option_list{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+   /*style the answer text*/
+   .flex-item .option{
+        background: #EBDBCC;
+        border: 1px solid #231709;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+   }
+
+   /*changes when hover*/
+   .flex-item .option:hover{
+        color: white;
+        background: #7b5b64;
+        border-color: #231709;
+    }
+
+    .flex-item .option_list .option:last-child{
+        margin-bottom: opx;
+    }
+
+    .flex-item .nextBtn{
+        height: 40px;
+        align-items: center;
+        padding: 0 10px;
+        border: 1px solid #231709;
+        border-radius: 5px;
+        
+
+    }
+
+   /*image on the right*/
+   .flex-item .right{
+        background: #EBDBCC;
+        width: 350px;
+        height: 550px;
+        margin-top: 10px;
+        line-height: 150px;
+        text-align: center;
+   }
+
+
+  
