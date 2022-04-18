@@ -1,6 +1,42 @@
+
+/* Fonts from Google*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    font-family: 'roboto mono', monospace;
+}
+
 body{
     background-color: #EBDBCC;
 }
+
+/*home page*/ 
+/*image home page*/
+.img_home{
+    width: 600;
+    height: 400;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+article{
+    text-align: center;
+}
+  
+  .startBtn{
+    border: none;
+    color: #800059;
+    background-color: white;
+    border-radius: 30%;
+    padding: 1em 1.5em;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: auto;
+    
+  }
 
 /*make the page responsive*/
 .flex-container {
@@ -35,29 +71,32 @@ body{
    }
 
     /*header*/   
-   .flex-item .header{
-        position: relative;
+   .flex-item header{
+        height: 70px;
         z-index: 99;
-        padding: 0 30px;
+        padding: 10px 20px;
         background: #EBDBCC;
-        display: flex;
+        text-align: center;
         align-items: center;
-        justify-content: center;
         border-radius: 5px 5px 0 0;
     }
 
     /*style the title*/
-    .flex-item .title{
+    .flex-item header .title{
         align-items: center; 
         text-align: center;
+        padding-bottom: 10px;
         font-size: 60px;
+        font-family: "roboto mono";
         color: #7b5b64;    
     }
     
-    .flex-item .timer{
+    .flex-item header .timer{
         position: relative;
         width: 145px;
-        height: 45px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -67,80 +106,99 @@ body{
         padding: 0 8px;   
     }
 
-    .flex-item .timer .time_text{
+    .flex-item header .timer .time_text{
         text-align: center;
-        font-size: 17;
+        font-size: 17px;
         font-weight: 500;
         color: white;
         user-select: none;   
     }
 
-    .flex-item .timer .time_sec{
-        height: 30px;
+    .flex-item header .timer .time_sec{
+        height: 25px;
         width: 45px;
         text-align: center;
-        line-height: 30px;
+        line-height: 25px;
         background: white;
         font-size: 18px;
         font-weight: 500;
         color: #7b5b64;
-        border: 1px solid #231709;
         border-radius: 5px;
         user-select: none;
     }
+
+    .flex-item section{
+        padding: 25px 30px 25px 30px;
+    }
     
     /*style the question text*/
-   .flex-item .question{
+   .flex-item section .question_text{
+        font-family: 'Shadows Into Light', cursive;
         font-size: 30px;
         color: #231709;
+        padding-top: 40px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px;    
     }
 
     /*style the answers box*/
-   .flex-item .option_list{
-        padding-top: 10px;
+   .flex-item section .option_list{
+        padding-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         display: block;
     }
 
    /*style the answer text*/
-   .flex-item .option{
-        background: #EBDBCC;
+   section .option_list .option{
+        background: white;
         border: 1px solid #231709;
         border-radius: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding: 15px 15px;
+        margin-bottom: 15px;
+        font-family: 'Shadows Into Light', cursive;
         font-size: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        transition: all 0.3s ease;
    }
 
    /*changes when hover*/
-   .flex-item .option:hover{
+   section .option_list .option:hover{
         color: white;
         background: #7b5b64;
         border-color: #231709;
     }
 
-    .flex-item .option_list .option:last-child{
+    .option .correctAnswer{
+        background-color: green;
+    }
+
+    .option .incorrectAnswer{
+        background-color: red;
+    }
+
+    .option_list .option:last-child{
         margin-bottom: opx;
     }
 
-    .flex-item .nextBtn{
+    /*style the button*/
+    .nextBtn button{
         height: 40px;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 10px;
         border: 1px solid #231709;
         border-radius: 5px;
+        color: #231709;
+        background: white;
+        cursor: pointer;
         
-
+        
     }
 
    /*image on the right*/

@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>CSS Flexbox</title>
- <link rel="stylesheet" href="test2.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <ul class="flex-container">
@@ -22,22 +22,25 @@
                 </header>
 
                 <section>
-                    <div class="question">
-                        <p>Which city is the capital of Japan?</p>
+                    <div class="question_text">
+                        <span>Which city is the capital of Japan?</span>
+                    </div>
 
-                        <div class="option_list">
-                            <div class="option">
-                                <p>Kioto</p>
-                            </div>
-                            <div class="option">
-                                <p>Tokyo</p>
-                            </div>
-                            <div class="option">
-                                <p>Osaka</p>
-                            </div>
+                    <div class="option_list">
+                        <div class="option">
+                            <span>Kioto</span>   
+                        </div>
+                        <div class="option">
+                            <span>Tokyo</span> 
+                        </div>
+                        <div class="option">
+                            <span>Osaka</span>
                         </div>
                     </div>
+
+                    <div class="buttons">
                     <button class="nextBtn">Next Question</button>
+                    </div>
                 </section>
             </main>
         </li>
@@ -46,5 +49,12 @@
             <img class="right" src="japan-right.png">
         </li>
     </ul>
+
+  
+
+    <script scr="js/script.js"></script>
+    <script src="js/questions.js"></script>
+
+    
 </body>
 </html>
